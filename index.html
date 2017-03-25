@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="nl" id="b">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Makers maken makers</title>
+<link rel="manifest" href="manifest.json">
+<meta name="description" content="Dit is een lijst van tools die je wel of niet een keer gebruikt hebt..">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@samenklooien">
+<meta name="twitter:title" content="Lekker Samen Klooien">
+<meta name="twitter:description" content="Dit zijn de tools waaruit je kan kiezen">
+<meta name="twitter:creator" content="@samenklooien">
+<style>	
+	body{background-color: #cc0066}
+	@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+	
+
+	/* Text meant only for screen readers. */
+	.screen-reader-only { clip: rect(1px, 1px, 1px, 1px); position: absolute !important; height: 1px; width: 1px; overflow: hidden; }
+
+	html {font-family: 'Bree Serif', Georgia, serif; color: #fff; line-height: 1.4; }
+
+	@media (min-width: 33em) { main { width: 60%; } }
+	@media (min-width: 64em) { .logo { position: absolute; left: -275px; top: 0; } }
+	@media (min-width: 64em) { .intro { padding-top: 5em; } }
+	@media (min-width: 50em) { .img-container { margin: 1em -4em; } }
+	a { color: #fff; text-decoration: none; border-bottom: 2px solid #fff;}
+	a:hover, a:focus { border-bottom: 2px solid #fff; }
+
+	ul {list-style: none;}
+	li {list-style: none;margin:1ex;padding:0; float:left; height:17em;}
+	input[type=checkbox] {display:none;}
+	input[type=checkbox] + label div:before{ 
+		display: inline-block;
+		content:'';
+		background-image: url("statics/img/unchecked.svg");
+		width: 5ex;
+		height: 5ex;
+		transition: all .5s ease;
+		cursor: pointer;
+		z-index: 1;
+	 }
+	 input[type=checkbox]:checked + label div:before{ 
+	 	background-image: url("statics/img/checked.svg");
+	 }
+
+	 label div{
+	 	display:block;
+	 	color:#fff;
+	 	font-size:1.2rem;
+	 	margin:0;
+	 	margin-top:-5ex;
+	 }
+</style>
+<body>
+<ul>
+	<li><input type="checkbox" name="tool01" id="tool01" value="01_hamer"><label for="tool01"><img src="statics/img/01_hamer.svg" alt="Hamer" height="200" width="200"><div>hamer</div></label>
+	<li><input type="checkbox" name="tool02" id="tool02" value="02_mixer"><label for="tool02"><img src="statics/img/02_mixer.svg" alt="Mixer" height="200" width="200"><div>mixer</div></label>
+	<li><input type="checkbox" name="tool03" id="tool03" value="03_makey_makey"><label for="tool03"><img src="statics/img/03_makey_makey.svg" alt="Makey Makey" height="200" width="240"><div>Makey makey</div></label>
+	<li><input type="checkbox" name="tool04" id="tool04" value="04_soldeerbout"><label for="tool04"><img src="statics/img/04_soldeerbout.svg" alt="Soldeerbout" height="200" width="200"><div>soldeerbout</div></label>
+	<li><input type="checkbox" name="tool05" id="tool05" value="05_bijl"><label for="tool05"><img src="statics/img/05_bijl.svg" alt="Bijl" height="200" width="200"><div>bijl</div></label>
+	<li><input type="checkbox" name="tool06" id="tool06" value="06_chip"><label for="tool06"><img src="statics/img/06_chip.svg" alt="06_chip" height="200" width="200"><div>chip</div></label>
+	<li><input type="checkbox" name="tool07" id="tool07" value="07_handkettingzaag"><label for="tool07"><img src="statics/img/07_handkettingzaag.svg" alt="07_handkettingzaag" height="200" width="200"><div>(hand) kettingzaag</div></label>
+	<li><input type="checkbox" name="tool08" id="tool08" value="08_figuurzaag"><label for="tool08"><img src="statics/img/08_figuurzaag.svg" alt="08_figuurzaag" height="200" width="200"><div>figuurzaag</div></label>
+	<li><input type="checkbox" name="tool09" id="tool09" value="09_guts"><label for="tool09"><img src="statics/img/09_guts.svg" alt="09_guts" height="200" width="200"><div>guts</div></label>
+	<li><input type="checkbox" name="tool10" id="tool10" value="10_lucifers"><label for="tool10"><img src="statics/img/10_lucifers.svg" alt="10_lucifers" height="200" width="200"><div>lucifers</div></label>
+	<li><input type="checkbox" name="tool11" id="tool11" value="11_tang"><label for="tool11"><img src="statics/img/11_tang.svg" alt="11_tang" height="200" width="200"><div>tang</div></label>
+	<li><input type="checkbox" name="tool12" id="tool12" value="12_beitel"><label for="tool12"><img src="statics/img/12_beitel.svg" alt="12_beitel" height="200" width="200"><div>beitel</div></label>
+	<li><input type="checkbox" name="tool13" id="tool13" value="13_microcontroller"><label for="tool13"><img src="statics/img/13_microcontroller.svg" alt="13_microcontroller" height="200" width="200"><div>microcontroller</div></label>
+	<li><input type="checkbox" name="tool14" id="tool14" value="14_multimeter"><label for="tool14"><img src="statics/img/14_multimeter.svg" alt="14_multimeter" height="250" width="220"><div>multimeter</div></label>
+	<li><input type="checkbox" name="tool15" id="tool15" value="15_plakband"><label for="tool15"><img src="statics/img/15_plakband.svg" alt="15_plakband" height="200" width="200"><div>plakband</div></label>
+	<li><input type="checkbox" name="tool16" id="tool16" value="16_rolmaat"><label for="tool16"><img src="statics/img/16_rolmaat.svg" alt="16_rolmaat" height="200" width="200"><div>rolmaat</div></label>
+	<li><input type="checkbox" name="tool17" id="tool17" value="17_schroevendraaier"><label for="tool17"><img src="statics/img/17_schroevendraaier.svg" alt="17_schroevendraaier" height="200" width="200"><div>schroevendraaier</div></label>
+	<li><input type="checkbox" name="tool18" id="tool18" value="18_electrische_boor"><label for="tool18"><img src="statics/img/18_electrische_boor.svg" alt="18_electrische_boor" height="200" width="200"><div>electrische boor</div></label>
+	<li><input type="checkbox" name="tool19" id="tool19" value="19_zakmes"><label for="tool19"><img src="statics/img/19_zakmes.svg" alt="19_zakmes" height="200" width="200"><div>zakmes</div></label>
+	<li><input type="checkbox" name="tool20" id="tool20" value="20_pan"><label for="tool20"><img src="statics/img/20_pan.svg" alt="20_pan" height="200" width="200"><div>pan</div></label>
+	<li><input type="checkbox" name="tool21" id="tool21" value="21_basis_electronica"><label for="tool21"><img src="statics/img/21_basis_electronica.svg" alt="21_basis_electronica" height="200" width="200"><div>basis electronica</div></label>
+	<li><input type="checkbox" name="tool22" id="tool22" value="22_gist"><label for="tool22"><img src="statics/img/22_gist.svg" alt="22_gist" height="200" width="200"><div>gist</div></label>
+	<li><input type="checkbox" name="tool23" id="tool23" value="23_koksmes"><label for="tool23"><img src="statics/img/23_koksmes.svg" alt="23_koksmes" height="200" width="200"><div>koksmes</div></label>
+	<li><input type="checkbox" name="tool24" id="tool24" value="24_beton"><label for="tool24"><img src="statics/img/24_beton.svg" alt="24_beton" height="200" width="200"><div>beton</div></label>
+	<li><input type="checkbox" name="tool25" id="tool25" value="25_vergrootglas"><label for="tool25"><img src="statics/img/25_vergrootglas.svg" alt="25_vergrootglas" height="200" width="200"><div>vergrootglas</div></label>
+	<li><input type="checkbox" name="tool26" id="tool26" value="26_handboor"><label for="tool26"><img src="statics/img/26_handboor.svg" alt="26_handboor" height="200" width="200"><div>handboor</div></label>
+	<li><input type="checkbox" name="tool27" id="tool27" value="27_papiermache"><label for="27_papiermache"><img src="statics/img/27_papiermache.svg" alt="27_papiermache" height="200" width="200"><div>papiermaché</div></label>
+	<li><input type="checkbox" name="tool28" id="tool28" value="28_cakevorm"><label for="tool28"><img src="statics/img/28_cakevorm.svg" alt="28_cakevorm" height="200" width="200"><div>cakevorm</div></label>
+	<li><input type="checkbox" name="tool29" id="tool29" value="29_haaknaald"><label for="tool29"><img src="statics/img/29_haaknaald.svg" alt="29_haaknaald" height="200" width="200"><div>haaknaald</div></label>
+	<li><input type="checkbox" name="tool30" id="tool30" value="30_boormachine"><label for="tool30"><img src="statics/img/30_boormachine.svg" alt="30_boormachine" height="200" width="200"><div>boormachine</div></label>
+	<li><input type="checkbox" name="tool31" id="tool31" value="31_tacker"><label for="tool31"><img src="statics/img/31_tacker.svg" alt="31_tacker" height="200" width="200"><div>tacker</div></label>
+	<li><input type="checkbox" name="tool32" id="tool32" value="32_naaimachine"><label for="tool32"><img src="statics/img/32_naaimachine.svg" alt="32_naaimachine" height="200" width="200"><div>naaimachine</div></label>
+	<li><input type="checkbox" name="tool33" id="tool33" value="33_robotica"><label for="tool33"><img src="statics/img/33_robotica.svg" alt="33_robotica" height="200" width="200"><div>robotica</div></label>
+	<li><input type="checkbox" name="tool34" id="tool34" value="34_decoupeerzaag"><label for="tool34"><img src="statics/img/34_decoupeerzaag.svg" alt="34_decoupeerzaag" height="250" width="220"><div>decoupeerzaag</div></label>
+	<li><input type="checkbox" name="tool36" id="tool36" value="36_klei"><label for="tool36"><img src="statics/img/36_klei.svg" alt="36_klei" height="200" width="220"><div>klei</div></label>
+	<li><input type="checkbox" name="tool37" id="tool37" value="37_gaatjestang"><label for="tool37"><img src="statics/img/37_gaatjestang.svg" alt="37_gaatjestang" height="200" width="200"><div>gaatjestang</div></label>
+	<li><input type="checkbox" name="tool38" id="tool38" value="38_waterpas"><label for="tool38"><img src="statics/img/38_waterpas.svg" alt="38_waterpas" height="200" width="230"><div>waterpas</div></label>
+	<li><input type="checkbox" name="tool39" id="tool39" value="39_zaag"><label for="tool39"><img src="statics/img/39_zaag.svg" alt="39_zaag" height="200" width="230"><div>zaag</div></label>
+	<li><input type="checkbox" name="tool40" id="tool40" value="40_naald"><label for="tool40"><img src="statics/img/40_naald.svg" alt="40_naald" height="230" width="200"><div>naald</div></label>
+	<li><input type="checkbox" name="tool41" id="tool41" value="41_bakpan"><label for="tool41"><img src="statics/img/41_bakpan.svg" alt="41_bakpan" height="200" width="230"><div>bakpan</div></label>
+	<li><input type="checkbox" name="tool42" id="tool42" value="42_camera"><label for="tool42"><img src="statics/img/42_camera.svg" alt="42_camera" height="200" width="200"><div>camera</div></label>
+	<li><input type="checkbox" name="tool43" id="tool43" value="43_breadboard"><label for="tool43"><img src="statics/img/43_breadboard.svg" alt="43_breadboard" height="200" width="200"><div>breadboard</div></label>
+	<li><input type="checkbox" name="tool44" id="tool44" value="44_3dprinter"><label for="tool44"><img src="statics/img/44_3dprinter.svg" alt="44_3dprinter" height="200" width="200"><div>3D printer</div></label>
+	<li><input type="checkbox" name="tool45" id="tool45" value="45_gips"><label for="tool45"><img src="statics/img/45_gips.svg" alt="45_gips" height="200" width="200"><div>gips</div></label>
+	<li><input type="checkbox" name="tool46" id="tool46" value="46_striptang"><label for="tool46"><img src="statics/img/46_striptang.svg" alt="46_striptang" height="200" width="200"><div>striptang</div></label>
+	<li><input type="checkbox" name="tool47" id="tool47" value="47_breinaalden"><label for="tool47"><img src="statics/img/47_breinaalden.svg" alt="47_breinaalden" height="200" width="200"><div>breinaalden</div></label>
+	<li><input type="checkbox" name="tool48" id="tool48" value="48_schermen"><label for="tool48"><img src="statics/img/48_schermen.svg" alt="48_schermen" height="200" width="200"><div>schermen</div></label>
+	<li><input type="checkbox" name="tool49" id="tool49" value="49_blauwdrukken"><label for="tool49"><img src="statics/img/49_blauwdrukken.svg" alt="49_blauwdrukken" height="200" width="220"><div>blauwdrukken</div></label>
+	<li><input type="checkbox" name="tool50" id="tool50" value="50_snoeitang"><label for="tool50"><img src="statics/img/50_snoeitang.svg" alt="50_snoeitang" height="200" width="200"><div>snoeitang</div></label>
+</ul>
+</body>
+</html>
